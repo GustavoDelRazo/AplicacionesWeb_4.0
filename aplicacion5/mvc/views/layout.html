@@ -5,21 +5,32 @@ $def with (content)
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Productos</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body class="m-0 p-0 font-sans bg-gray-100">
-  <header class="bg-white">
-    <div class="grid grid-cols-2 gap-8 p-5">
-      <div class="flex items-center">
-        <a>Productos</a>
-      </div>
-      <div class="flex items-center space-x-4">
-        <a href="/insertar" class="text-[#265301] hover:border hover:bg-[#cdfeaa] visited:text-[#437a16] focus:border focus:bg-[#bae498] active:bg-[#265301] active:text-[#cdfeaa] text-2xl">Insertar</a>
+<body class="bg-white text-dark">
+  <header class="bg-secondary py-3">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col">
+          <a href="#" class="navbar-brand text-white">Productos</a>
+        </div>
+        <div class="col-auto">
+          <a href="/insertar" class="btn btn-success">Insertar</a>
+        </div>
       </div>
     </div>
   </header>
-  <hr class="border-2 border-black">
-  <div class="flex flex-col justify-center items-center mt-5">
-    $:content
+  <hr class="border-light">
+  <div class="container mt-4">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        $:content
+      </div>
+    </div>
   </div>
+
+  <!-- Bootstrap JS (opcional) -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
